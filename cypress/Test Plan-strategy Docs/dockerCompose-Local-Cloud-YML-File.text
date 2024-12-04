@@ -1,0 +1,50 @@
+===========CLOUD=========
+=>Docker Compose file:
+
+version: '3'
+services:
+  e2e:
+    image: cypress
+    build: .
+    container_name: cypress
+    command: npx cypress run
+    volumes:
+      - $PWD:/app
+
+=> Docker file
+
+FROM cypress/included:latest
+WORKDIR /app
+COPY . /app
+RUN npm install
+CMD [ "npm", "cypress", "run" ]
+VOLUME -$PWD:/app
+
+
+
+
+==========LOCAL================
+
+version: '3'
+services:
+  cypress-chrome:
+    image: cypress/included:12.8.1
+    command: "--browser chrome"
+    working_dir: /cypress
+    volumes:
+      - ./:/cypress
+
+  cypress-firefox:
+    image: cypress/included:12.8.1
+    command: "--browser firefox"
+    working_dir: /cypress
+    volumes:
+      - ./:/cypress
+
+  cypress-electron:
+    image: cypress/included:12.8.1
+    working_dir: /cypress
+    volumes:
+      - ./:/cypress
+      
+          

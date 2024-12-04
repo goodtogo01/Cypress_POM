@@ -1,0 +1,10 @@
+{
+    "validID": "myutility.all@gmail.com",
+    "validPass": "admin123",
+    "inValidID": "myutility.all@gmail.com",
+    "inValidPass": "sadmin123",
+    "message": {
+      "loggedUser": "jhone doe",
+      "errorMessage": "Your email or password is incorrect!"
+    }
+  }
