@@ -12,6 +12,10 @@ class LoginPage extends BasePage{
     clickLogOutButton(){return " Logout"};
     invalidLogin(){return "Your email or password is incorrect!"}
 
+    pageTitle(text){
+        cy.title().should('eq', text)
+        return this;
+    }
     enterEmail(email) {
        // cy.get(this.getEmail()).type(email)
         this.fillText(this.getEmail(), email);
@@ -40,6 +44,7 @@ class LoginPage extends BasePage{
         cy.contains(this.invalidLogin()).contains(message)
         return this;
     }
+    
   
 }
 const loginPage = new LoginPage();

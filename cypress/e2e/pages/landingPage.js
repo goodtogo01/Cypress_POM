@@ -6,7 +6,7 @@ import loginPage from "./loginPage";
 class LandingPage extends BasePage{
 
    footers(){
-      return "div[class='single-widget'] h2"
+      return "div[class='single-widget-'] h2"
    }
     gotoLogin (){
         return " Signup / Login"
@@ -16,8 +16,9 @@ class LandingPage extends BasePage{
         this.clickElement(this.gotoLogin(), true);
         return loginPage;
      }
-     titleOfPage(text){
+     varifyCurrentPageTitle(text){
       cy.title().should('eq',text)
+      return this;
      }
      foterVisible(text){
      cy.get(this.footers()).should('contain', text)

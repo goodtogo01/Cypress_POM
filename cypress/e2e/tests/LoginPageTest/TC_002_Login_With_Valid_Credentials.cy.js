@@ -6,6 +6,11 @@ describe('Login Functionalities of Automation Exercise Site', function () {
         cy.fixture('loginPageData').as('data')
         cy.visit("https://www.automationexercise.com/")
     })
+    it("Validate Page Title", function () {
+        loginPage.titleOfPage(this.data.title)
+
+
+    })
     it("TC_01: Login with valid credentials", function(){
         landingPage.loginSource()
        .enterEmail(this.data.validID)

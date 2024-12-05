@@ -1,6 +1,7 @@
 // for inteligencies Also Created file of congig.json for active inteligensis to entire project
 
 import landingPage from "../../pages/landingPage"
+ 
 
 
 describe('Landing Page Functionalities of Automation Exercise Site', function () {
@@ -9,12 +10,16 @@ describe('Landing Page Functionalities of Automation Exercise Site', function ()
         cy.visit("https://www.automationexercise.com/")
     })
     it("Validate Page Title", function () {
-        landingPage.titleOfPage(this.data.title)
-
+        landingPage.varifyCurrentPageTitle(this.data.titleLandingPge)
 
     })
     it('Landing Page footer', function () {
         landingPage.foterVisible(this.data.footer)
+    })
+    it("Move foreward to Login Page", function(){
+        landingPage.loginSource();
+        landingPage.varifyCurrentPageTitle(this.data.titleLoginPage)
+
     })
 
     this.afterEach(function () {

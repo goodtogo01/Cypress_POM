@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-05T05:36:35.733Z",
-    "end": "2024-12-05T05:36:41.975Z",
-    "duration": 6242,
+    "start": "2024-12-05T05:38:17.064Z",
+    "end": "2024-12-05T05:38:22.135Z",
+    "duration": 5071,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e1659928-56ae-4f65-9256-1436fd0c003d",
+      "uuid": "8e0d30ff-fef9-4a6c-abe4-82769c824fd4",
       "title": "",
       "fullFile": "cypress/e2e/tests/LandingPageTest/TC_001_Land_To_Landing_Page.cy.js",
       "file": "cypress/e2e/tests/LandingPageTest/TC_001_Land_To_Landing_Page.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "16d5d75f-0a26-42c3-85e1-d72aea9353fd",
+          "uuid": "256cdb4c-688e-459d-bf33-9ba443b58d42",
           "title": "Landing Page Functionalities of Automation Exercise Site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validate Page Title",
               "fullTitle": "Landing Page Functionalities of Automation Exercise Site Validate Page Title",
               "timedOut": null,
-              "duration": 1995,
+              "duration": 1291,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_landingPage.default.varifyCurrentPageTitle(this.data.titleLandingPge);",
               "err": {},
-              "uuid": "77590419-c0ea-4a8a-a99b-1f2448b600f6",
-              "parentUUID": "16d5d75f-0a26-42c3-85e1-d72aea9353fd",
+              "uuid": "d0e276a7-f2ea-4ccb-84fb-5dd0acf05751",
+              "parentUUID": "256cdb4c-688e-459d-bf33-9ba443b58d42",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Landing Page footer",
               "fullTitle": "Landing Page Functionalities of Automation Exercise Site Landing Page footer",
               "timedOut": null,
-              "duration": 1182,
+              "duration": 867,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "_landingPage.default.foterVisible(this.data.footer);",
               "err": {},
-              "uuid": "d7644741-ea94-4cff-a69e-b40bd6e32a1d",
-              "parentUUID": "16d5d75f-0a26-42c3-85e1-d72aea9353fd",
+              "uuid": "6743f834-d075-4e5f-90f9-aa9410e1464a",
+              "parentUUID": "256cdb4c-688e-459d-bf33-9ba443b58d42",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Move foreward to Login Page",
               "fullTitle": "Landing Page Functionalities of Automation Exercise Site Move foreward to Login Page",
               "timedOut": null,
-              "duration": 1253,
+              "duration": 1184,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "_landingPage.default.loginSource();\n_landingPage.default.varifyCurrentPageTitle(this.data.titleLoginPage);",
               "err": {},
-              "uuid": "fbc21a6e-0983-4b14-ab08-cec2d731567b",
-              "parentUUID": "16d5d75f-0a26-42c3-85e1-d72aea9353fd",
+              "uuid": "0477bf13-ac53-47e0-9e7b-af16a917c96a",
+              "parentUUID": "256cdb4c-688e-459d-bf33-9ba443b58d42",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "77590419-c0ea-4a8a-a99b-1f2448b600f6",
-            "d7644741-ea94-4cff-a69e-b40bd6e32a1d",
-            "fbc21a6e-0983-4b14-ab08-cec2d731567b"
+            "d0e276a7-f2ea-4ccb-84fb-5dd0acf05751",
+            "6743f834-d075-4e5f-90f9-aa9410e1464a",
+            "0477bf13-ac53-47e0-9e7b-af16a917c96a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4430,
+          "duration": 3342,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

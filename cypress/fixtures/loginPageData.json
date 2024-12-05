@@ -1,5 +1,6 @@
 {
-    "validID": "myutility.all@gmail.com",
+  "title":"Automation Exercise - Signup / Login",  
+  "validID": "myutility.all@gmail.com",
     "validPass": "admin123",
     "inValidID": "myutility.all@gmail.com",
     "inValidPass": "sadmin123",

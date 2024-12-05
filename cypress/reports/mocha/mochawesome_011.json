@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
+    "tests": 2,
     "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-12-05T05:36:43.385Z",
-    "end": "2024-12-05T05:36:49.463Z",
-    "duration": 6078,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2024-12-05T05:43:13.253Z",
+    "end": "2024-12-05T05:43:31.051Z",
+    "duration": 17798,
+    "testsRegistered": 2,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b399d2fc-e4c0-449d-bd61-2e75291f5cdf",
+      "uuid": "0db29270-5819-4470-b534-493f59414243",
       "title": "",
       "fullFile": "cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js",
       "file": "cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6eacb977-4eab-41e0-a2bc-028300fa73d6",
+          "uuid": "20c7bcc3-ffde-483b-859f-77d46e108e29",
           "title": "Login Functionalities of Automation Exercise Site",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,56 @@
           "afterHooks": [],
           "tests": [
             {
+              "title": "Validate Page Title",
+              "fullTitle": "Login Functionalities of Automation Exercise Site Validate Page Title",
+              "timedOut": null,
+              "duration": 1578,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Screenshot\",\n  \"value\": \"/Users/khosruzzaman/CYPRESS-WORKS/CY-POM/cypress/screenshots/TC_002_Login_With_Valid_Credentials.cy.js/Login Functionalities of Automation Exercise Site -- Validate Page Title (failed).png\"\n}",
+              "code": "_loginPage.default.titleOfPage(this.data.title);",
+              "err": {
+                "message": "TypeError: _loginPage.default.titleOfPage is not a function",
+                "estack": "TypeError: _loginPage.default.titleOfPage is not a function\n    at Context.eval (webpack://cy-pom/./cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js:10:18)",
+                "diff": null
+              },
+              "uuid": "384bde8f-691a-4f71-80f1-28c5a45d1757",
+              "parentUUID": "20c7bcc3-ffde-483b-859f-77d46e108e29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
               "title": "TC_01: Login with valid credentials",
               "fullTitle": "Login Functionalities of Automation Exercise Site TC_01: Login with valid credentials",
               "timedOut": null,
-              "duration": 4668,
+              "duration": 5066,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "_landingPage.default.loginSource().enterEmail(this.data.validID).enterPassword(this.data.validPass).clickLogin().seeUserName(this.data.message.loggedUser).clickLogOut();",
               "err": {},
-              "uuid": "ae421538-5f85-4bdd-b086-05fd1762aa2e",
-              "parentUUID": "6eacb977-4eab-41e0-a2bc-028300fa73d6",
+              "uuid": "a8b96344-b794-41bb-aff1-1fa0a8350e3e",
+              "parentUUID": "20c7bcc3-ffde-483b-859f-77d46e108e29",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ae421538-5f85-4bdd-b086-05fd1762aa2e"
+            "a8b96344-b794-41bb-aff1-1fa0a8350e3e"
           ],
-          "failures": [],
+          "failures": [
+            "384bde8f-691a-4f71-80f1-28c5a45d1757"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 4668,
+          "duration": 6644,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
