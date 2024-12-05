@@ -7,7 +7,8 @@ describe('Login Functionalities of Automation Exercise Site', function () {
         cy.visit("https://www.automationexercise.com/")
     })
     it("Validate Page Title", function () {
-        loginPage.titleOfPage(this.data.title)
+        landingPage.loginSource()
+        loginPage.pageTitle(this.data.title)
 
 
     })

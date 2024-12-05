@@ -6,7 +6,7 @@ import loginPage from "./loginPage";
 class LandingPage extends BasePage{
 
    footers(){
-      return "div[class='single-widget-'] h2"
+      return "div[class='single-widget'] h2"
    }
     gotoLogin (){
         return " Signup / Login"
