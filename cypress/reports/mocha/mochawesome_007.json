@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-05T20:57:48.607Z",
+    "end": "2024-12-05T20:57:58.246Z",
+    "duration": 9639,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "31c05944-f58a-46ff-a281-706697a036eb",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/RegistrationPageTest/TC_003_Register_User.cy.js",
+      "file": "cypress/tests/RegistrationPageTest/TC_003_Register_User.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4dabf80a-dc68-45f9-b8b8-a7fb84e824f2",
+          "title": "Registration Functionalities",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01: Register new user",
+              "fullTitle": "Registration Functionalities TC_01: Register new user",
+              "timedOut": null,
+              "duration": 8059,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_landingPage.default.loginSource();\n_registerUser.default.userFullName(this.data.name);\n_registerUser.default.userEmail(this.data.newEmail);\n_registerUser.default.clicSignupButton();\n_registerUser.default.genders();\n_registerUser.default.newPass(this.data.passWord);\n_registerUser.default.setDay(5);\n_registerUser.default.setMonths('March');\n_registerUser.default.setYears(1995);\n_registerUser.default.setFirstName(this.data.firstName);\n_registerUser.default.setLastName(this.data.lastName);\n_registerUser.default.setCompanyName(this.data.company);\n_registerUser.default.setAddress(this.data.address);\n_registerUser.default.setCountry(this.data.country);\n_registerUser.default.setStates('NY');\n_registerUser.default.setCity(this.data.city);\n_registerUser.default.setZip(this.data.zip);\n_registerUser.default.setMob(this.data.mobileNo);\n_registerUser.default.clickRegister();\n_registerUser.default.accountCreated(this.data.finalMessage);\n_registerUser.default.clicContinue();\n_loginPage.default.seeUserName(this.data.nameAppear);",
+              "err": {},
+              "uuid": "ab7ec9bf-5f98-4681-874d-55c16c462fe2",
+              "parentUUID": "4dabf80a-dc68-45f9-b8b8-a7fb84e824f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ab7ec9bf-5f98-4681-874d-55c16c462fe2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8059,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

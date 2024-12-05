@@ -1,4 +1,5 @@
 
+import basePage from "../../pages/basePage"
 import landingPage from "../../pages/landingPage"
 import registerUser from "../../pages/registerUser";
 import loginPage from "../../pages/loginPage";
@@ -11,8 +12,10 @@ describe("Registration Functionalities", function(){
         cy.visit("https://www.automationexercise.com/")
        
     })
-
-    it("TC_01: Register new user", function(){
+it("Validate Page title", function(){
+    registerUser.pageTitle(this.data.pageTitle)
+})
+    it("Register new user", function(){
         landingPage.loginSource()
         registerUser.userFullName(this.data.name)
         registerUser.userEmail(this.data.newEmail)

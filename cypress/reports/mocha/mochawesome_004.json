@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-05T20:48:16.056Z",
+    "end": "2024-12-05T20:48:44.154Z",
+    "duration": 28098,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f068b59c-cb4d-45ae-9d09-5d0dd380e855",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/RegistrationPageTest/TC_003_Register_User.cy.js",
+      "file": "cypress/tests/RegistrationPageTest/TC_003_Register_User.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "01b271e2-1a46-40c8-a5fc-cb1fd1aa6c4f",
+          "title": "Registration Functionalities",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01: Register new user",
+              "fullTitle": "Registration Functionalities TC_01: Register new user",
+              "timedOut": null,
+              "duration": 8380,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Screenshot\",\n  \"value\": \"/e2e/cypress/screenshots/TC_003_Register_User.cy.js/Registration Functionalities -- TC_01: Register new user (failed).png\"\n}",
+              "code": "_landingPage.default.loginSource();\n_registerUser.default.userFullName(this.data.name);\n_registerUser.default.userEmail(this.data.newEmail);\n_registerUser.default.clicSignupButton();\n_registerUser.default.genders();\n_registerUser.default.newPass(this.data.passWord);\n_registerUser.default.setDay(5);\n_registerUser.default.setMonths('March');\n_registerUser.default.setYears(1995);\n_registerUser.default.setFirstName(this.data.firstName);\n_registerUser.default.setLastName(this.data.lastName);\n_registerUser.default.setCompanyName(this.data.company);\n_registerUser.default.setAddress(this.data.address);\n_registerUser.default.setCountry(this.data.country);\n_registerUser.default.setStates('NY');\n_registerUser.default.setCity(this.data.city);\n_registerUser.default.setZip(this.data.zip);\n_registerUser.default.setMob(this.data.mobileNo);\n_registerUser.default.clickRegister();\n_registerUser.default.accountCreated(this.data.finalMessage);\n_registerUser.default.clicContinue();\n_loginPage.default.seeUserName(this.data.nameAppear);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#id_gender1`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#id_gender1`, but never found it.\n    at RegisterUser.selectItems (webpack://cy-pom/./cypress/e2e/pages/basePage.js:70:22)\n    at RegisterUser.genders (webpack://cy-pom/./cypress/e2e/pages/registerUser.js:38:13)\n    at Context.eval (webpack://cy-pom/./cypress/e2e/tests/RegistrationPageTest/TC_003_Register_User.cy.js:20:21)",
+                "diff": null
+              },
+              "uuid": "59a34e2e-0c36-440c-a2f4-84ce94867690",
+              "parentUUID": "01b271e2-1a46-40c8-a5fc-cb1fd1aa6c4f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "59a34e2e-0c36-440c-a2f4-84ce94867690"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8380,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-05T20:48:01.822Z",
+    "end": "2024-12-05T20:48:14.442Z",
+    "duration": 12620,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b017387a-cc30-4522-8250-d4fad962aa1c",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/LandingPageTest/TC_001_Land_To_Landing_Page.cy.js",
+      "file": "cypress/tests/LandingPageTest/TC_001_Land_To_Landing_Page.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b866dcb0-9cc7-4e28-94ea-b1315ce3bf61",
+          "title": "Landing Page Functionalities of Automation Exercise Site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Page Title",
+              "fullTitle": "Landing Page Functionalities of Automation Exercise Site Validate Page Title",
+              "timedOut": null,
+              "duration": 6426,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_landingPage.default.varifyCurrentPageTitle(this.data.titleLandingPge);",
+              "err": {},
+              "uuid": "9ef373dd-f755-4248-bb75-9b92f5912563",
+              "parentUUID": "b866dcb0-9cc7-4e28-94ea-b1315ce3bf61",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Landing Page footer",
+              "fullTitle": "Landing Page Functionalities of Automation Exercise Site Landing Page footer",
+              "timedOut": null,
+              "duration": 2184,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_landingPage.default.foterVisible(this.data.footer);",
+              "err": {},
+              "uuid": "6df2402d-2cdc-4cb1-84c8-647912dfd5ba",
+              "parentUUID": "b866dcb0-9cc7-4e28-94ea-b1315ce3bf61",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Move foreward to Login Page",
+              "fullTitle": "Landing Page Functionalities of Automation Exercise Site Move foreward to Login Page",
+              "timedOut": null,
+              "duration": 1687,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_landingPage.default.loginSource();\n_landingPage.default.varifyCurrentPageTitle(this.data.titleLoginPage);",
+              "err": {},
+              "uuid": "62ef3035-1b08-485d-997d-f552baa1551c",
+              "parentUUID": "b866dcb0-9cc7-4e28-94ea-b1315ce3bf61",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9ef373dd-f755-4248-bb75-9b92f5912563",
+            "6df2402d-2cdc-4cb1-84c8-647912dfd5ba",
+            "62ef3035-1b08-485d-997d-f552baa1551c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
