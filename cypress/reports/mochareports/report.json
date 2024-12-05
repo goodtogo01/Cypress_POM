@@ -1,24 +1,24 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 5,
-    "passes": 4,
+    "suites": 3,
+    "tests": 6,
+    "passes": 6,
     "pending": 0,
-    "failures": 1,
-    "testsRegistered": 5,
-    "passPercent": 80,
+    "failures": 0,
+    "testsRegistered": 6,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-12-05T05:58:07.277Z",
-    "end": "2024-12-05T05:58:25.733Z",
-    "duration": 18456
+    "start": "2024-12-05T20:44:09.814Z",
+    "end": "2024-12-05T20:44:38.649Z",
+    "duration": 28835
   },
   "results": [
     {
-      "uuid": "390a4977-927b-4b36-a641-80301eab2883",
+      "uuid": "78d2945f-8cdf-4a93-8bf5-68fb29990926",
       "title": "",
       "fullFile": "cypress/e2e/tests/LandingPageTest/TC_001_Land_To_Landing_Page.cy.js",
       "file": "cypress/e2e/tests/LandingPageTest/TC_001_Land_To_Landing_Page.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a2995c4f-ff91-4adf-a018-18f40f0f5d41",
+          "uuid": "6e292fca-0205-46af-8550-69e288caded0",
           "title": "Landing Page Functionalities of Automation Exercise Site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validate Page Title",
               "fullTitle": "Landing Page Functionalities of Automation Exercise Site Validate Page Title",
               "timedOut": null,
-              "duration": 1824,
+              "duration": 3278,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_landingPage.default.varifyCurrentPageTitle(this.data.titleLandingPge);",
               "err": {},
-              "uuid": "e3eef402-97fa-4987-a034-9954e7d7c921",
-              "parentUUID": "a2995c4f-ff91-4adf-a018-18f40f0f5d41",
+              "uuid": "b59d3a6a-964d-4ede-ae8d-30b14389a1af",
+              "parentUUID": "6e292fca-0205-46af-8550-69e288caded0",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Landing Page footer",
               "fullTitle": "Landing Page Functionalities of Automation Exercise Site Landing Page footer",
               "timedOut": null,
-              "duration": 967,
+              "duration": 1621,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "_landingPage.default.foterVisible(this.data.footer);",
               "err": {},
-              "uuid": "686bd46d-bac7-42b8-b737-e6a7da39c62d",
-              "parentUUID": "a2995c4f-ff91-4adf-a018-18f40f0f5d41",
+              "uuid": "817db95b-4d01-48c5-815b-189ca42c2f0b",
+              "parentUUID": "6e292fca-0205-46af-8550-69e288caded0",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Move foreward to Login Page",
               "fullTitle": "Landing Page Functionalities of Automation Exercise Site Move foreward to Login Page",
               "timedOut": null,
-              "duration": 1530,
+              "duration": 1334,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "_landingPage.default.loginSource();\n_landingPage.default.varifyCurrentPageTitle(this.data.titleLoginPage);",
               "err": {},
-              "uuid": "e5ddf792-eb28-4749-a624-9ecf9e423dc5",
-              "parentUUID": "a2995c4f-ff91-4adf-a018-18f40f0f5d41",
+              "uuid": "f5ed14ea-9009-4e55-90a1-1eeffaf807f0",
+              "parentUUID": "6e292fca-0205-46af-8550-69e288caded0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e3eef402-97fa-4987-a034-9954e7d7c921",
-            "686bd46d-bac7-42b8-b737-e6a7da39c62d",
-            "e5ddf792-eb28-4749-a624-9ecf9e423dc5"
+            "b59d3a6a-964d-4ede-ae8d-30b14389a1af",
+            "817db95b-4d01-48c5-815b-189ca42c2f0b",
+            "f5ed14ea-9009-4e55-90a1-1eeffaf807f0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4321,
+          "duration": 6233,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -114,7 +114,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "99abc9b7-3914-4d85-a6ac-5c53dc80fa2c",
+      "uuid": "85a5822c-8dfe-4a1f-ae78-5dfb0b3fee4c",
       "title": "",
       "fullFile": "cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js",
       "file": "cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js",
@@ -123,7 +123,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "345769f1-44af-467b-9dec-3889a578a007",
+          "uuid": "8381259c-ab7b-4a19-829e-8c1f8816d01b",
           "title": "Login Functionalities of Automation Exercise Site",
           "fullFile": "",
           "file": "",
@@ -134,21 +134,17 @@
               "title": "Validate Page Title",
               "fullTitle": "Login Functionalities of Automation Exercise Site Validate Page Title",
               "timedOut": null,
-              "duration": 1335,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 2213,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"Screenshot\",\n  \"value\": \"/Users/khosruzzaman/CYPRESS-WORKS/CY-POM/cypress/screenshots/TC_002_Login_With_Valid_Credentials.cy.js/Login Functionalities of Automation Exercise Site -- Validate Page Title (failed).png\"\n}",
-              "code": "_loginPage.default.titleOfPage(this.data.title);",
-              "err": {
-                "message": "TypeError: _loginPage.default.titleOfPage is not a function",
-                "estack": "TypeError: _loginPage.default.titleOfPage is not a function\n    at Context.eval (webpack://cy-pom/./cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js:10:18)",
-                "diff": null
-              },
-              "uuid": "60417975-6557-4d16-9bdf-da67904402af",
-              "parentUUID": "345769f1-44af-467b-9dec-3889a578a007",
+              "context": null,
+              "code": "_landingPage.default.loginSource();\n_loginPage.default.pageTitle(this.data.title);",
+              "err": {},
+              "uuid": "e21cebad-0784-4ef1-b92b-0e1a6ff925ef",
+              "parentUUID": "8381259c-ab7b-4a19-829e-8c1f8816d01b",
               "isHook": false,
               "skipped": false
             },
@@ -156,7 +152,7 @@
               "title": "TC_01: Login with valid credentials",
               "fullTitle": "Login Functionalities of Automation Exercise Site TC_01: Login with valid credentials",
               "timedOut": null,
-              "duration": 4162,
+              "duration": 4276,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -165,22 +161,79 @@
               "context": null,
               "code": "_landingPage.default.loginSource().enterEmail(this.data.validID).enterPassword(this.data.validPass).clickLogin().seeUserName(this.data.message.loggedUser).clickLogOut();",
               "err": {},
-              "uuid": "f85707b8-bbbc-473f-ba85-4c2dc5da75d6",
-              "parentUUID": "345769f1-44af-467b-9dec-3889a578a007",
+              "uuid": "dad9c53b-92a6-4cdd-9f97-b084ef350601",
+              "parentUUID": "8381259c-ab7b-4a19-829e-8c1f8816d01b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f85707b8-bbbc-473f-ba85-4c2dc5da75d6"
+            "e21cebad-0784-4ef1-b92b-0e1a6ff925ef",
+            "dad9c53b-92a6-4cdd-9f97-b084ef350601"
           ],
-          "failures": [
-            "60417975-6557-4d16-9bdf-da67904402af"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5497,
+          "duration": 6489,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8f19016e-8a0c-4235-9983-4c278c606484",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/RegistrationPageTest/TC_003_Register_User.cy.js",
+      "file": "cypress/e2e/tests/RegistrationPageTest/TC_003_Register_User.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a91a7cd-192d-41c5-b331-235c8e64d8f8",
+          "title": "Registration Functionalities",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01: Register new user",
+              "fullTitle": "Registration Functionalities TC_01: Register new user",
+              "timedOut": null,
+              "duration": 8538,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_landingPage.default.loginSource();\n_registerUser.default.userFullName(this.data.name);\n_registerUser.default.userEmail(this.data.newEmail);\n_registerUser.default.clicSignupButton();\n_registerUser.default.genders();\n_registerUser.default.newPass(this.data.passWord);\n_registerUser.default.setDay(5);\n_registerUser.default.setMonths('March');\n_registerUser.default.setYears(1995);\n_registerUser.default.setFirstName(this.data.firstName);\n_registerUser.default.setLastName(this.data.lastName);\n_registerUser.default.setCompanyName(this.data.company);\n_registerUser.default.setAddress(this.data.address);\n_registerUser.default.setCountry(this.data.country);\n_registerUser.default.setStates('NY');\n_registerUser.default.setCity(this.data.city);\n_registerUser.default.setZip(this.data.zip);\n_registerUser.default.setMob(this.data.mobileNo);\n_registerUser.default.clickRegister();\n_registerUser.default.accountCreated(this.data.finalMessage);\n_registerUser.default.clicContinue();\n_loginPage.default.seeUserName(this.data.nameAppear);",
+              "err": {},
+              "uuid": "ec5d8c5d-bf3b-4e63-9bed-e01bbde46095",
+              "parentUUID": "5a91a7cd-192d-41c5-b331-235c8e64d8f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec5d8c5d-bf3b-4e63-9bed-e01bbde46095"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8538,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

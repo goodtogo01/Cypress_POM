@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-12-05T05:58:14.923Z",
-    "end": "2024-12-05T05:58:25.733Z",
-    "duration": 10810,
+    "failures": 0,
+    "start": "2024-12-05T20:44:19.310Z",
+    "end": "2024-12-05T20:44:27.247Z",
+    "duration": 7937,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "99abc9b7-3914-4d85-a6ac-5c53dc80fa2c",
+      "uuid": "85a5822c-8dfe-4a1f-ae78-5dfb0b3fee4c",
       "title": "",
       "fullFile": "cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js",
       "file": "cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "345769f1-44af-467b-9dec-3889a578a007",
+          "uuid": "8381259c-ab7b-4a19-829e-8c1f8816d01b",
           "title": "Login Functionalities of Automation Exercise Site",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,17 @@
               "title": "Validate Page Title",
               "fullTitle": "Login Functionalities of Automation Exercise Site Validate Page Title",
               "timedOut": null,
-              "duration": 1335,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 2213,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"Screenshot\",\n  \"value\": \"/Users/khosruzzaman/CYPRESS-WORKS/CY-POM/cypress/screenshots/TC_002_Login_With_Valid_Credentials.cy.js/Login Functionalities of Automation Exercise Site -- Validate Page Title (failed).png\"\n}",
-              "code": "_loginPage.default.titleOfPage(this.data.title);",
-              "err": {
-                "message": "TypeError: _loginPage.default.titleOfPage is not a function",
-                "estack": "TypeError: _loginPage.default.titleOfPage is not a function\n    at Context.eval (webpack://cy-pom/./cypress/e2e/tests/LoginPageTest/TC_002_Login_With_Valid_Credentials.cy.js:10:18)",
-                "diff": null
-              },
-              "uuid": "60417975-6557-4d16-9bdf-da67904402af",
-              "parentUUID": "345769f1-44af-467b-9dec-3889a578a007",
+              "context": null,
+              "code": "_landingPage.default.loginSource();\n_loginPage.default.pageTitle(this.data.title);",
+              "err": {},
+              "uuid": "e21cebad-0784-4ef1-b92b-0e1a6ff925ef",
+              "parentUUID": "8381259c-ab7b-4a19-829e-8c1f8816d01b",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +56,7 @@
               "title": "TC_01: Login with valid credentials",
               "fullTitle": "Login Functionalities of Automation Exercise Site TC_01: Login with valid credentials",
               "timedOut": null,
-              "duration": 4162,
+              "duration": 4276,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -69,22 +65,21 @@
               "context": null,
               "code": "_landingPage.default.loginSource().enterEmail(this.data.validID).enterPassword(this.data.validPass).clickLogin().seeUserName(this.data.message.loggedUser).clickLogOut();",
               "err": {},
-              "uuid": "f85707b8-bbbc-473f-ba85-4c2dc5da75d6",
-              "parentUUID": "345769f1-44af-467b-9dec-3889a578a007",
+              "uuid": "dad9c53b-92a6-4cdd-9f97-b084ef350601",
+              "parentUUID": "8381259c-ab7b-4a19-829e-8c1f8816d01b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f85707b8-bbbc-473f-ba85-4c2dc5da75d6"
+            "e21cebad-0784-4ef1-b92b-0e1a6ff925ef",
+            "dad9c53b-92a6-4cdd-9f97-b084ef350601"
           ],
-          "failures": [
-            "60417975-6557-4d16-9bdf-da67904402af"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5497,
+          "duration": 6489,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

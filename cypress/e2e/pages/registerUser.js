@@ -7,11 +7,16 @@ class RegisterUser extends BasePage {
     // collect locators
 
     //Step 1: Main Page Actions
+
     enterName() { return "input[placeholder='Name']" }
     enterEmail() { return "input[data-qa='signup-email']"}
     signUp() {return "button[data-qa='signup-button']" }
 
         // main page implementations
+        pageTitle(text){
+            cy.title().should('eq', text)
+            return this
+        }
         userFullName(name) {
             cy.get(this.enterName()).type(name);
           
@@ -26,11 +31,11 @@ class RegisterUser extends BasePage {
         }
 
     // User details top-part 
-    title() {return "#id_gender1" }
+    genderTitle() {return "#id_gender1" }
     enterPass() {return "#password"}
     genders() {
         //cy.get(this.title()).should('not.be.selected').click({force: true})
-        this.selectItems(this.title());
+        this.selectItems(this.genderTitle());
        
     }
     newPass(pas) {

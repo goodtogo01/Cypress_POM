@@ -65,9 +65,9 @@ class BasePage {
     // Select Item with desire value
     selectItems(locator, text, useContains=false){
         if(useContains){
-            cy.contains(locator).type(text).click()
+            return cy.contains(locator).type(text).click()
         }else{
-            cy.get(locator).click()
+            return cy.get(locator).click()
         }
     }
 
